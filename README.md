@@ -40,11 +40,11 @@ The state is then advanced one timestep:
 ## What I learned
 
 Kp on its own allows for huge overshoot, because velocity is not taken into
-account — the drone arrives at the target at full speed and sails straight past
+account, the drone arrives at the target at full speed and goes straight past
 it, oscillating between 0 and 20 m forever.
 
 Kd puts velocity into consideration. The minus sign subtracts a large amount
-from the thrust when the drone is moving upward fast, which brakes it; when the
+from the thrust when the drone is moving upward fast, which brakes it. When the
 drone is falling, velocity is negative, so the same minus sign adds thrust
 instead and catches it.
 
