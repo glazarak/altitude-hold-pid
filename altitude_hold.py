@@ -1,16 +1,14 @@
-# altitude_hold.py - a pretend drone trying to hold 10 m
-
 import matplotlib.pyplot as plt
 
-m = 1.0         # mass, kg
-g = 9.81        # gravity, m/s^2
-target = 10.0   # where we want it, m
-Kp = 2.0        # spring stiffness, N per m
-Kd = 0.0        # damper, N per (m/s)
+m = 1.0
+g = 9.81
+target = 10.0
+Kp = 2.0
+Kd = 0.0
 
-height = 0.0    # starting height, m
-velocity = 0.0  # starting speed, m/s
-dt = 0.01       # length of one tick, s
+height = 0.0
+velocity = 0.0
+dt = 0.01
 
 times = []
 heights_nodamp = []
@@ -32,9 +30,9 @@ for step in range(2000):              # 2000 ticks x 0.01 s = 20 seconds
     if step % 100 == 0:               # every 100th tick = once a second
         print(round(step * dt, 1), "s   height", round(height, 2), "m")
 
-height = 0.0            # back to the ground
-velocity = 0.0          # and standing still
-Kd = 1.5                # damper on for run 2
+height = 0.0
+velocity = 0.0
+Kd = 1.5
 
 for step in range(2000):              # 2000 ticks x 0.01 s = 20 seconds
     error = target - height
