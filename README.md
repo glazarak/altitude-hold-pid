@@ -34,8 +34,8 @@ The state is then advanced one timestep:
 
 | controller | peak height | settles? |
 |---|---|---|
-| P only (`Kd = 0`) | 20.0 m | never — still oscillating at 20 s |
-| PD (`Kd = 1.5`) | 11.4 m at 2.6 s | yes — within ±2% by 4.1 s |
+| P only (`Kd = 0`) | 20.0 m | never  (still oscillating at 20s) |
+| PD (`Kd = 1.5`) | 11.4 m at 2.6 s | yes (within ±2% by 4.1s) |
 
 ## What I learned
 
