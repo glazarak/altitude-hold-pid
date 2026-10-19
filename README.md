@@ -47,8 +47,3 @@ Kd puts velocity into consideration. The minus sign subtracts a large amount
 from the thrust when the drone is moving upward fast, which brakes it. When the
 drone is falling, velocity is negative, so the same minus sign adds thrust
 instead and catches it.
-
-## Running it
-
-    pip install matplotlib
-    python altitude_hold.py
